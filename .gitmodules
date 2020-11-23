@@ -1,0 +1,9 @@
+[submodule "Practicals/Practical_1/third_party/glfw"]
+	path = Practicals/Practical_1/third_party/glfw
+	url = https://github.com/glfw/glfw.git
+[submodule "Practicals/Practical_1/third_party/glew-cmake"]
+	path = Practicals/Practical_1/third_party/glew-cmake
+	url = https://github.com/Perlmint/glew-cmake.git
+[submodule "Practicals/Practical_1/third_party/glm"]
+	path = Practicals/Practical_1/third_party/glm
+	url = https://github.com/g-truc/glm.git
