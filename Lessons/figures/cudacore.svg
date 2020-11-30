@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="200mm"
+   height="200mm"
+   viewBox="0 0 200 200"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="cudacore.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#2a2a2a"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="1"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="38.794585"
+     inkscape:cy="286.60462"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:pagecheckerboard="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="2992"
+     inkscape:window-y="580"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-97)">
+    <rect
+       id="rect3715"
+       width="196.16965"
+       height="196.16965"
+       x="2.2678571"
+       y="99.318451"
+       style="stroke-width:2.065;stroke:#000000;stroke-opacity:1;fill:#73b900;fill-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="99.429634"
+       y="119.39331"
+       id="text4524"><tspan
+         sodipodi:role="line"
+         id="tspan4522"
+         x="99.429634"
+         y="119.39331"
+         style="font-size:14.11111069px;stroke-width:0.26458332">Core</tspan></text>
+    <rect
+       style="fill:#ff6400;fill-opacity:1;stroke:#000000;stroke-width:2.06499982;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4540"
+       width="158.22356"
+       height="22.985178"
+       x="21.381561"
+       y="132.89651" />
+    <rect
+       style="fill:#0064b9;fill-opacity:1;stroke:#000000;stroke-width:2.06499982;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4542"
+       width="158.22356"
+       height="22.450632"
+       x="21.381561"
+       y="166.46489" />
+    <rect
+       style="fill:#0064b9;fill-opacity:1;stroke:#000000;stroke-width:2.06499982;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4544"
+       width="158.22356"
+       height="23.519712"
+       x="21.381561"
+       y="249.23972" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:2.06499982;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4546"
+       width="67.351921"
+       height="36.883194"
+       x="21.37619"
+       y="200.24843" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:2.06499982;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4546-2"
+       width="67.351921"
+       height="36.883194"
+       x="111.48225"
+       y="200.24843" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="99.958801"
+       y="147.33444"
+       id="text4565"><tspan
+         sodipodi:role="line"
+         id="tspan4563"
+         x="99.958801"
+         y="147.33444"
+         style="stroke-width:0.26458332">Dispatch Port</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="99.958801"
+       y="181.56108"
+       id="text4569"><tspan
+         sodipodi:role="line"
+         id="tspan4567"
+         x="99.958801"
+         y="181.56108"
+         style="stroke-width:0.26458332">Operand Collector</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="99.958801"
+       y="264.40921"
+       id="text4573"><tspan
+         sodipodi:role="line"
+         id="tspan4571"
+         x="99.958801"
+         y="264.40921"
+         style="stroke-width:0.26458332">Result Queue</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="55.597431"
+       y="222.6937"
+       id="text4577"><tspan
+         sodipodi:role="line"
+         id="tspan4575"
+         x="55.597431"
+         y="222.6937"
+         style="stroke-width:0.26458332">FPU</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="144.32018"
+       y="223.22823"
+       id="text4581"><tspan
+         sodipodi:role="line"
+         id="tspan4579"
+         x="144.32018"
+         y="223.22823"
+         style="stroke-width:0.26458332">INT Unit</tspan></text>
+  </g>
+</svg>

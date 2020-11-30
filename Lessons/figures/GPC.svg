@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="200mm"
+   height="200mm"
+   viewBox="0 0 200 200"
+   version="1.1"
+   id="svg7967"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="GPC.svg">
+  <defs
+     id="defs7961" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="388.81135"
+     inkscape:cy="539.91589"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:pagecheckerboard="true"
+     inkscape:window-width="958"
+     inkscape:window-height="1008"
+     inkscape:window-x="2033"
+     inkscape:window-y="387"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata7964">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-97)">
+    <rect
+       style="fill:#464646;fill-opacity:1;stroke:#000000;stroke-width:0.99751264;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect7969"
+       width="199.00249"
+       height="130.00249"
+       x="0.49875632"
+       y="127.8922" />
+    <rect
+       style="fill:#73b900;fill-opacity:1;stroke:#000000;stroke-width:0.87931693;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect8514"
+       width="30.963285"
+       height="108.12056"
+       x="10.135255"
+       y="146.66045" />
+    <rect
+       style="fill:#73b900;fill-opacity:1;stroke:#000000;stroke-width:0.87931693;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect8514-1"
+       width="30.963285"
+       height="108.12056"
+       x="46.950714"
+       y="146.66045" />
+    <rect
+       style="fill:#73b900;fill-opacity:1;stroke:#000000;stroke-width:0.87931693;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect8514-1-7"
+       width="30.963285"
+       height="108.12056"
+       x="83.766182"
+       y="146.66045" />
+    <rect
+       style="fill:#73b900;fill-opacity:1;stroke:#000000;stroke-width:0.87931693;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect8514-1-4"
+       width="30.963285"
+       height="108.12056"
+       x="120.58164"
+       y="146.66045" />
+    <rect
+       style="fill:#73b900;fill-opacity:1;stroke:#000000;stroke-width:0.87931693;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect8514-1-2"
+       width="30.963285"
+       height="108.12056"
+       x="157.39709"
+       y="146.66045" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.55700874px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26392519"
+       x="20.2917"
+       y="139.36119"
+       id="text8593"
+       transform="scale(0.99749356,1.0025127)"><tspan
+         sodipodi:role="line"
+         id="tspan8591"
+         x="20.2917"
+         y="139.36119"
+         style="stroke-width:0.26392519">GPC</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.55700874px;line-height:1.25;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26392519"
+       x="10.833617"
+       y="199.36566"
+       id="text8597"
+       transform="scale(0.99749356,1.0025127)"><tspan
+         sodipodi:role="line"
+         id="tspan8595"
+         x="10.833617"
+         y="199.36566"
+         style="text-align:start;text-anchor:start;stroke-width:0.26392519">  SM      SM       SM      SM      SM</tspan></text>
+  </g>
+</svg>
