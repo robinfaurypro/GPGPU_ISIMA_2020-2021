@@ -186,7 +186,7 @@
 
 \begin{frame}{Dispatch threads}
 	From the host, you can dispatch a large amount of threads. But those threads need to be organize. On a kernel we specify the number of invocation and when we use the dispatch function we specify the number of working group. Each working group will run x instance of the kernel.\\
-	If we specify 42 invocations in the kernel code and we dispatch 100 working groups, the GPU will run the kernel 42 000 times.
+	If we specify 42 invocations in the kernel code and we dispatch 1000 working groups, the GPU will run the kernel 42 000 times.
 \end{frame}
 
 \lstset{language=C++,basicstyle=\ttfamily,keywordstyle=\color{red},commentstyle=\color{green},tabsize=1}
