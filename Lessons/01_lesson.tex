@@ -264,9 +264,9 @@
 	};
 
 	void main() {
-		float data=buffer[gl_GlobalInvocationID.x].x;
+		float data=buffer_[gl_GlobalInvocationID.x];
 		++data;
-		buffer[gl_GlobalInvocationID.x]=data;
+		buffer_[gl_GlobalInvocationID.x]=data;
 	}
 \end{lstlisting}
 }
@@ -300,6 +300,13 @@
 	\codeIndex
 	If data is stored into 2D or 3D array, it is possible to launch the kernel using a 3d vector instead of an integer and the index becomes:
 	\codeIndexDim
+\end{frame}
+
+\begin{frame}{Indexing overview}
+	\begin{figure}
+		\includegraphics[scale=0.2]{figures/threadID.png}
+		\caption{Relation between the CPU dispatch function and the ThreadID}
+	\end{figure}
 \end{frame}
 
 \section{GPGPU usage in the industry}
