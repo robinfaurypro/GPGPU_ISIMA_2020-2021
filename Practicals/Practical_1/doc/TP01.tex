@@ -122,7 +122,7 @@ Now we can ask a pointer on the data:
 \end{lstlisting}
 Adding the WRITE\_ONLY flag will help the driver. After the map action you can copy (with memcpy for example) your particle data. After that we must unmap the pointer.
 \begin{lstlisting}
-	void *ptr = glUnmapBuffer(GL_SHADER_STORAGE_BUFFER);
+	glUnmapBuffer(GL_SHADER_STORAGE_BUFFER);
 \end{lstlisting}
 After this action the ptr variable isn't valid! Finally we can unbind the buffer.
 \begin{lstlisting}
