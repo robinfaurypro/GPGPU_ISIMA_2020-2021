@@ -5,12 +5,38 @@
 #include <random>
 #include <string>
 
-const char *kVertexSource = R"()";
+const char *kVertexSource = R"(
+#version 430 core
 
-const char *kFragmentSource = R"()";
+out vec2 uv;
+
+void main() {
+  uv = vec2(                                 // Generate a quad using two
+    float(((uint(gl_VertexID)+2u)/3u)%2u),   // triangles to fill the space
+    float(((uint(gl_VertexID)+1u)/3u)%2u));  // ([0,1],[0,1])
+  gl_Position = vec4(uv*2.0-1.0, 0.0, 1.0);  // OpenGL space is ([-1,1],[-1,1])
+})";
+
+const char *kFragmentSource = R"(
+#version 430 core
+
+in vec2 uv;
+uniform sampler2D texture_fractal;
+uniform int has_texture_fractal = 0;
+
+out vec4 output_color;
+
+void main() {
+  vec3 color = vec3(uv, 0.0);
+  if (has_texture_fractal == 1) {
+    color = texture(texture_fractal, uv).rgb;
+  }
+  output_color = vec4(color, 1.0);
+})";
 
 struct Content {
-  GLuint kernel_draw_fractal_;
+  GLuint kernel_draw_image_ = 0;
+  GLuint texture_ = 0;
 };
 
 void Initialization(Content& content) {
@@ -48,67 +74,60 @@ void Initialization(Content& content) {
     }
   }
 
-  content.kernel_draw_fractal_ = glCreateProgram();
-  glAttachShader(content.kernel_draw_fractal_, vertex_shader);
-  glAttachShader(content.kernel_draw_fractal_, fragment_shader);
-  glLinkProgram(content.kernel_draw_fractal_);
+  content.kernel_draw_image_ = glCreateProgram();
+  glAttachShader(content.kernel_draw_image_, vertex_shader);
+  glAttachShader(content.kernel_draw_image_, fragment_shader);
+  glLinkProgram(content.kernel_draw_image_);
   ok = GL_FALSE;
-  glGetProgramiv(content.kernel_draw_fractal_, GL_LINK_STATUS, &ok);
+  glGetProgramiv(content.kernel_draw_image_, GL_LINK_STATUS, &ok);
   if (!ok) {
     GLint length;
     glGetProgramiv(
-      content.kernel_draw_fractal_, GL_INFO_LOG_LENGTH, &length);
+      content.kernel_draw_image_, GL_INFO_LOG_LENGTH, &length);
     if (length > 0) {
       std::vector<GLchar> log(length+1, 0);
       glGetProgramInfoLog(
-        content.kernel_draw_fractal_, length, nullptr, log.data());
+        content.kernel_draw_image_, length, nullptr, log.data());
       throw std::runtime_error(
         std::string("[ERROR] Program draw link fail")+
         std::string(log.data()));
     }
   }
-  glDetachShader(content.kernel_draw_fractal_, vertex_shader);
-  glDetachShader(content.kernel_draw_fractal_, fragment_shader);
+  glDetachShader(content.kernel_draw_image_, vertex_shader);
+  glDetachShader(content.kernel_draw_image_, fragment_shader);
   glDeleteShader(vertex_shader);
   glDeleteShader(fragment_shader);
 }
 
-void ComputeFractal(Content& content) {
-  
-}
+void ComputeFractal(Content& content) {}
+
+void BlurImage(Content& content) {}
 
 void ComputeFrame(Content& content) {
   ComputeFractal(content);
+  for (int32_t i=0; i<10; ++i) {
+    BlurImage(content);
+  }
 
   glClearColor(0.16, 0.16, 0.16, 0.0);
   glClear(GL_COLOR_BUFFER_BIT);
 
-  /*const uint64_t stride = sizeof(Particle);
-  glUseProgram(content.kernel_draw_particles_);
-  glBindBuffer(GL_ARRAY_BUFFER, content.buffer_);
-  glVertexAttribPointer(
-    0, 2, GL_FLOAT, GL_FALSE, stride, (void*)(0));
-  glEnableVertexAttribArray(0);
-  glVertexAttribPointer(
-    1, 2, GL_FLOAT, GL_FALSE, stride, (void*)(sizeof(float)*(2)));
-  glEnableVertexAttribArray(1);
-  glVertexAttribPointer(
-    2, 3, GL_FLOAT, GL_FALSE, stride, (void*)(sizeof(float)*(2+2)));
-  glEnableVertexAttribArray(2);
-  glVertexAttribPointer(
-    3, 1, GL_FLOAT, GL_FALSE, stride, (void*)(sizeof(float)*(2+2+3)));
-  glEnableVertexAttribArray(3);
-  glDrawArrays(GL_POINTS, 0, content.particles_.size());
-  glDisableVertexAttribArray(3);
-  glDisableVertexAttribArray(2);
-  glDisableVertexAttribArray(1);
-  glDisableVertexAttribArray(0);
-  glBindBuffer(GL_ARRAY_BUFFER, 0);
-  glUseProgram(0);*/
+  glUseProgram(content.kernel_draw_image_);
+  if (content.texture_ != 0) {
+    glBindTexture(GL_TEXTURE_2D, content.texture_);
+    glUniform1i(
+      glGetUniformLocation(
+        content.kernel_draw_image_, "has_texture_fractal"), 1);
+    glUniform1i(
+      glGetUniformLocation(content.kernel_draw_image_, "texture_fractal"), 0);
+  }
+  glDrawArrays(GL_TRIANGLES, 0, 6);
+  glBindTexture(GL_TEXTURE_2D, 0);
+  glUseProgram(0);
 }
 
 void Destroy(Content& content) {
-  glDeleteProgram(content.kernel_draw_fractal_);
+  glDeleteProgram(content.kernel_draw_image_);
 }
 
 void main() {
@@ -122,7 +141,7 @@ void main() {
   glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
   GLFWwindow* window =
-    glfwCreateWindow(800, 800, "ISIMA_Practical_1", nullptr, nullptr);
+    glfwCreateWindow(800, 800, "ISIMA_Practical_2", nullptr, nullptr);
   if (!window) {
     glfwTerminate();
     throw std::runtime_error("[ERROR] Window creation");
