@@ -16,3 +16,12 @@
 [submodule "Practicals/Practical_2/third_party/glfw"]
 	path = Practicals/Practical_2/third_party/glfw
 	url = https://github.com/glfw/glfw.git
+[submodule "Practicals/Practical_marked/third_party/glm"]
+	path = Practicals/Practical_marked/third_party/glm
+	url = https://github.com/g-truc/glm.git
+[submodule "Practicals/Practical_marked/third_party/glew-cmake"]
+	path = Practicals/Practical_marked/third_party/glew-cmake
+	url = https://github.com/Perlmint/glew-cmake.git
+[submodule "Practicals/Practical_marked/third_party/glfw"]
+	path = Practicals/Practical_marked/third_party/glfw
+	url = https://github.com/glfw/glfw.git
