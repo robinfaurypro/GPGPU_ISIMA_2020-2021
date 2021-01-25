@@ -403,7 +403,7 @@ void main() {
   glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
   GLFWwindow* window =
-    glfwCreateWindow(800, 800, "ISIMA_Practical_2", nullptr, nullptr);
+    glfwCreateWindow(800, 800, "ISIMA_Practical_Marked", nullptr, nullptr);
   if (!window) {
     glfwTerminate();
     throw std::runtime_error("[ERROR] Window creation");
